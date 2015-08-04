@@ -11,7 +11,7 @@ Given(/these services are enabled and running on the admin node$/) do
     service_name = row.first
 
     expect(admin_node.exec!(
-      "chkconfig #{service_name}"
+      "systemctl is-enabled #{service_name}"
     ).output).not_to match("unknown service")
 
     expect(admin_node.exec!(

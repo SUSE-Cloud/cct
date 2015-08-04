@@ -12,7 +12,7 @@ Feature: Admin node
 
   @os
   Scenario: Operating system support
-    Given the admin node is running "SUSE Linux Enterprise Server 11"
+    Given the admin node is running "SUSE Linux Enterprise Server 12"
 
   @ntp
   Scenario: NTP Server availability
