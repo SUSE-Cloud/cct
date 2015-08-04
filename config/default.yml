@@ -4,9 +4,9 @@ cloud:
 
 admin_node:
   os:
-    name: SUSE Linux Enterprise Server 11
-    version: 11
-    patchlevel: 3
+    name: SUSE Linux Enterprise Server 12
+    version: 12
+    patchlevel: 0
 
   ip: localhost
   ssh:

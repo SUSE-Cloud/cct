@@ -1,5 +1,5 @@
 Given(/^the NTP Server is running$/) do
-  expect(admin_node.exec!("service ntp status").output).to match(/running/)
+  expect(admin_node.exec!("service ntpd status").output).to match(/running/)
 end
 
 When(/^I request server for estimated correct local date and time$/) do
