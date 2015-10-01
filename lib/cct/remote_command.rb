@@ -38,7 +38,7 @@ module Cct
       end
       session.loop unless gateway
       result[:success?] = result.exit_code.zero?
-      if !result.success? || result.error.length.nonzero?
+      if !result.success? || (result.error.length.nonzero? && !result.exit_code.zero?)
         log.error(result.output)
         raise RemoteCommandFailed.new(full_command, result)
       end
