@@ -30,8 +30,6 @@ Feature: Admin node
       | crowbar-openstack                    |
       | crowbar-ceph                         |
       | crowbar-ha                           |
-      | crowbar-hyperv                       |
-      | crowbar-hyperv-data                  |
       | yast2-crowbar                        |
     And all dependencies of installed packages are satisfied
 
