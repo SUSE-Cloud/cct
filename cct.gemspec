@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "net-ssh", "~> 2.9.2"
   spec.add_dependency "net-ssh-gateway", "~> 1.2.0"
   spec.add_dependency "awesome_print", "~> 1.6.1"
-  spec.add_dependency "faraday", "~> 0.9.1"
+  spec.add_dependency "faraday", "~> 0.12.0.1"
   spec.add_dependency "faraday-digestauth", "~> 0.2.1"
-  spec.add_dependency "faraday_middleware", "~> 0.9.2"
+  spec.add_dependency "faraday_middleware", "~> 0.11.0"
 end
