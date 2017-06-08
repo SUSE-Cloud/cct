@@ -14,4 +14,3 @@ Feature: Controller node
 
   @system
   Scenario: Essential system requirements
-
