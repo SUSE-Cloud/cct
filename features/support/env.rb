@@ -5,6 +5,7 @@ require "cct/cloud/world"
 require_relative "step_helpers"
 require_relative "feature_helpers"
 require_relative "custom_matchers"
+require_relative "openstack_helpers"
 
 # Guess verbosity from the cli params
 verbose = ARGV.grep(/(--verbose|-v)/).empty? ? false : true
@@ -28,7 +29,8 @@ end
 
 World(
   StepHelpers,
-  FeatureHelpers
+  FeatureHelpers,
+  OpenstackHelpers
 )
 
 
